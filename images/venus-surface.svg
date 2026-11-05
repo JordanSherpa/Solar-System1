@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 420" width="700" height="420" role="img">
+  <title>Artist's view of Venus's surface: an orange sky above a volcano and rocky plains</title>
+  <defs><linearGradient id="vsky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c46a1a"/><stop offset="1" stop-color="#f4b860"/></linearGradient></defs>
+  <rect width="700" height="420" fill="url(#vsky)"/>
+  <polygon points="380,300 470,140 500,135 590,300" fill="#6b3a1a"/>
+  <path d="M470 140 q 15 -40 -5 -80 q 40 30 30 80z" fill="#9a5a2a" opacity=".6"/>
+  <path d="M478 150 q 10 60 -10 150 l 22 0 q 0 -90 -4 -150z" fill="#ff5a1a" opacity=".9"/>
+  <path d="M0 300 Q 150 280 300 305 T 700 300 V420 H0Z" fill="#8a4b20"/>
+  <path d="M0 350 Q 200 330 380 355 T 700 345 V420 H0Z" fill="#5c3115"/>
+  <path d="M30 370 l 25 -6 l 20 8 l -18 6z" fill="#3e200d"/>
+  <path d="M115 380 l 25 -6 l 20 8 l -18 6z" fill="#3e200d"/>
+  <path d="M200 390 l 25 -6 l 20 8 l -18 6z" fill="#3e200d"/>
+  <path d="M285 370 l 25 -6 l 20 8 l -18 6z" fill="#3e200d"/>
+  <path d="M370 380 l 25 -6 l 20 8 l -18 6z" fill="#3e200d"/>
+  <path d="M455 390 l 25 -6 l 20 8 l -18 6z" fill="#3e200d"/>
+  <path d="M540 370 l 25 -6 l 20 8 l -18 6z" fill="#3e200d"/>
+  <path d="M625 380 l 25 -6 l 20 8 l -18 6z" fill="#3e200d"/>
+  <text x="20" y="40" fill="#fff4dc" font-family="Palatino Linotype, Book Antiqua, serif" font-size="18" font-style="italic">Maat Mons rises above Venus's scorching orange plains</text>
+</svg>

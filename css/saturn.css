@@ -1,0 +1,45 @@
+/* ==========================================================
+   saturn.css - Saturn theme: elegant gold and cream
+   ========================================================== */
+:root {
+    --bg: #14100a;
+    /* a faint "ring" ellipse glowing behind the page */
+    --bg-image:
+        radial-gradient(ellipse 70% 12% at 50% 30%, rgba(231, 211, 161, 0.18), transparent 70%),
+        linear-gradient(180deg, #2a2114 0%, #14100a 60%);
+    --text: #fbf3df;
+    --muted: #d9c9a4;
+    --accent: #e7c77a;
+    --accent-text: #14100a;
+    --card: rgba(231, 199, 122, 0.07);
+    --card-border: rgba(231, 199, 122, 0.35);
+    --heading-font: Didot, "Bodoni MT", "Didot LT STD", Garamond, serif;
+    --body-font: Garamond, "Palatino Linotype", Georgia, serif;
+}
+
+.page-header h1 {
+    font-weight: normal;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+/* thin gold "ring" lines above and below the tagline */
+.tagline {
+    padding: 0.5rem 0;
+    border-top: 1px solid var(--accent);
+    border-bottom: 1px solid var(--accent);
+    font-style: italic;
+}
+
+.facts li {
+    border-radius: 999px / 40px;   /* oval cards, like the rings */
+    text-align: center;
+}
+
+/* ---------- Ring animation ---------- */
+.ring-stage {
+    display: block;
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+}

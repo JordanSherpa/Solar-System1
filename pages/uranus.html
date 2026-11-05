@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Facts about Uranus, the sideways ice giant.">
+    <title>Uranus | Solar System Explorer</title>
+    <!-- shared layout first, then this page's theme -->
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/uranus.css">
+</head>
+<body>
+
+    <!-- ===== Navigation bar: links to all 10 pages ===== -->
+    <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="sun.html">Sun</a></li>
+            <li><a href="moon.html">Moon</a></li>
+            <li><a href="earth.html">Earth</a></li>
+            <li><a href="mercury.html">Mercury</a></li>
+            <li><a href="venus.html">Venus</a></li>
+            <li><a href="mars.html">Mars</a></li>
+            <li><a href="jupiter.html">Jupiter</a></li>
+            <li><a href="saturn.html">Saturn</a></li>
+            <li><a href="uranus.html" aria-current="page">Uranus</a></li>
+        </ul>
+    </nav>
+
+    <!-- ===== Page title ===== -->
+    <header class="page-header">
+        <h1>Uranus</h1>
+        <p class="tagline">The tipped-over ice giant that rolls around the Sun.</p>
+    </header>
+
+    <main>
+        <!-- ===== Introduction + first picture ===== -->
+        <section class="split">
+            <div>
+                <h2>The Sideways Planet</h2>
+                <p>Uranus is an <i>ice giant</i>. Under its atmosphere of hydrogen, helium and methane is a hot, dense layer of water, ammonia and methane ices. The methane gives it its pale blue-green color.</p>
+                <p>Uranus is tipped almost completely on its side, so it rolls around the Sun like a ball instead of spinning like a top.</p>
+            </div>
+            <figure>
+                <img src="../images/uranus.svg" alt="Uranus as a pale blue-green ball with thin rings running up and down because the planet is on its side" width="500" height="500">
+                <figcaption>Uranus and its vertical rings.</figcaption>
+            </figure>
+        </section>
+
+        <!-- ===== Facts ===== -->
+        <section>
+            <h2>Uranus Facts</h2>
+            <ul class="facts">
+                <li><strong>Size</strong>About 50,724 km across, four times wider than Earth.</li>
+                <li><strong>Distance</strong>About 2.9 billion km (19.2 AU) from the Sun.</li>
+                <li><strong>Tilt</strong>Its axis is tilted about 98°, more than any other planet.</li>
+                <li><strong>Day</strong>One spin takes about 17 hours and 14 minutes.</li>
+                <li><strong>Year</strong>One orbit takes 84 Earth years.</li>
+                <li><strong>Coldest atmosphere</strong>Temperatures in its clouds drop to about −224 °C.</li>
+                <li><strong>Moons and rings</strong>29 known moons (the newest was found by the James Webb Space Telescope in 2025) and 13 thin, dark rings.</li>
+            </ul>
+        </section>
+
+        <!-- ===== JavaScript feature: Read More sections + sideways tilt demo ===== -->
+        <section class="card" id="feature">
+            <h2>Tip Uranus Over</h2>
+            <p>Compare Uranus's real tilt with Earth's. Press a button to rotate the planet.</p>
+            <div class="tilt-demo">
+                <div class="tilt-planet" id="tiltPlanet" aria-hidden="true">
+                    <div class="tilt-axis"></div>
+                    <div class="tilt-ring"></div>
+                </div>
+                <div>
+                    <div class="controls">
+                        <button class="btn secondary" id="earthTiltBtn" type="button">Earth's Tilt (23.4°)</button>
+                        <button class="btn" id="uranusTiltBtn" type="button">Uranus's Tilt (97.8°)</button>
+                    </div>
+                    <p class="result" id="tiltText" aria-live="polite">Tilt: 97.8°. Uranus is lying on its side.</p>
+                </div>
+            </div>
+
+            <h2>Read More</h2>
+            <div class="read-more">
+                <button class="btn secondary toggle" type="button" aria-expanded="false" aria-controls="more1">Read More: 42 years of daylight</button>
+                <div class="more-text" id="more1" hidden>
+                    <p>Because Uranus is on its side, each pole points almost straight at the Sun for part of its 84-year orbit. That means each pole gets about 42 years of nonstop sunlight followed by 42 years of darkness.</p>
+                </div>
+            </div>
+            <div class="read-more">
+                <button class="btn secondary toggle" type="button" aria-expanded="false" aria-controls="more2">Read More: discovered by telescope</button>
+                <div class="more-text" id="more2" hidden>
+                    <p>William Herschel discovered Uranus in 1781. It was the first planet found with a telescope, and it doubled the known size of the solar system overnight.</p>
+                </div>
+            </div>
+            <div class="read-more">
+                <button class="btn secondary toggle" type="button" aria-expanded="false" aria-controls="more3">Read More: moons named after plays</button>
+                <div class="more-text" id="more3" hidden>
+                    <p>Most of Uranus's moons are named after characters from the plays of William Shakespeare and the poems of Alexander Pope, such as Miranda, Titania, Oberon and Puck.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Second picture + more information ===== -->
+        <section class="split">
+            <figure>
+                <img src="../images/uranus-tilt.svg" alt="Diagram comparing Earth's slightly tilted spin axis at 23.4 degrees with Uranus's nearly sideways axis at 97.8 degrees" width="700" height="380">
+                <figcaption>Earth's tilt compared with Uranus's tilt.</figcaption>
+            </figure>
+            <div>
+                <h2>Why Is It Sideways?</h2>
+                <p>Scientists think one or more giant collisions with Earth-sized objects knocked Uranus over long ago.</p>
+                <p>Only one spacecraft has ever visited Uranus: Voyager 2 flew past in 1986.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Solar System Explorer &middot; CSCI 39548 Project 1 &middot; Built with HTML, CSS and JavaScript only.</p>
+        <p>All illustrations are original SVG drawings made for this site.</p>
+    </footer>
+
+    <!-- this page's JavaScript -->
+    <script src="../js/uranus.js"></script>
+</body>
+</html>

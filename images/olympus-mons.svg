@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" width="760" height="420" role="img">
+  <title>Size comparison of Olympus Mons on Mars next to Mount Everest</title>
+  <defs><linearGradient id="msky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e3a77a"/><stop offset="1" stop-color="#f6d1ae"/></linearGradient></defs>
+  <rect width="760" height="420" fill="url(#msky)"/>
+  <path d="M20 360 Q 180 120 300 110 Q 420 120 560 360Z" fill="#b5532a"/>
+  <ellipse cx="300" cy="115" rx="40" ry="8" fill="#7d3218"/>
+  <polygon points="590,360 650,250 665,240 680,250 740,360" fill="#7c7c86"/>
+  <polygon points="650,250 665,240 680,250 672,262 658,262" fill="#fff"/>
+  <rect x="0" y="360" width="760" height="60" fill="#8a3a1a"/>
+  <text x="300" y="95" fill="#4a1a08" font-family="Rockwell, Courier New, serif" font-size="18" font-weight="bold" text-anchor="middle">Olympus Mons ~22 km</text>
+  <text x="665" y="225" fill="#2e2e36" font-family="Rockwell, Courier New, serif" font-size="16" font-weight="bold" text-anchor="middle">Everest 8.8 km</text>
+  <text x="380" y="400" fill="#fde1c7" font-family="Rockwell, Courier New, serif" font-size="15" text-anchor="middle">The tallest volcano in the solar system: about 2.5x taller than Everest</text>
+</svg>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Facts about Mars, the red planet.">
+    <title>Mars | Solar System Explorer</title>
+    <!-- shared layout first, then this page's theme -->
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/mars.css">
+</head>
+<body>
+
+    <!-- ===== Navigation bar: links to all 10 pages ===== -->
+    <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="sun.html">Sun</a></li>
+            <li><a href="moon.html">Moon</a></li>
+            <li><a href="earth.html">Earth</a></li>
+            <li><a href="mercury.html">Mercury</a></li>
+            <li><a href="venus.html">Venus</a></li>
+            <li><a href="mars.html" aria-current="page">Mars</a></li>
+            <li><a href="jupiter.html">Jupiter</a></li>
+            <li><a href="saturn.html">Saturn</a></li>
+            <li><a href="uranus.html">Uranus</a></li>
+        </ul>
+    </nav>
+
+    <!-- ===== Page title ===== -->
+    <header class="page-header">
+        <h1>Mars</h1>
+        <p class="tagline">The dusty, rusty Red Planet.</p>
+    </header>
+
+    <main>
+        <!-- ===== Introduction + first picture ===== -->
+        <section class="split">
+            <div>
+                <h2>The Red Planet</h2>
+                <p>Mars gets its red color from iron oxide (rust) in its rocks and dust. It is named after the Roman god of war.</p>
+                <p>Mars is a cold desert today, but dried-up river valleys and lake beds show that water once flowed across its surface. Rovers like Curiosity and Perseverance are searching for signs of ancient life.</p>
+            </div>
+            <figure>
+                <img src="../images/mars.svg" alt="Mars drawn as a red-orange planet with darker markings and a white polar ice cap" width="500" height="500">
+                <figcaption>Mars, with its northern ice cap.</figcaption>
+            </figure>
+        </section>
+
+        <!-- ===== Facts ===== -->
+        <section>
+            <h2>Mars Facts</h2>
+            <ul class="facts">
+                <li><strong>Size</strong>About 6,779 km across, about half the width of Earth.</li>
+                <li><strong>Distance</strong>About 228 million km (1.52 AU) from the Sun.</li>
+                <li><strong>Day</strong>A Martian day, called a <i>sol</i>, lasts 24 hours and 37 minutes.</li>
+                <li><strong>Year</strong>One orbit takes 687 Earth days.</li>
+                <li><strong>Moons</strong>Two small moons: Phobos and Deimos.</li>
+                <li><strong>Temperature</strong>Averages about −65 °C.</li>
+                <li><strong>Gravity</strong>About 38% of Earth's.</li>
+            </ul>
+        </section>
+
+        <!-- ===== JavaScript feature: weight calculator ===== -->
+        <section class="card" id="feature">
+            <h2>What Would You Weigh on Mars?</h2>
+            <p>Mars has only 38% of Earth's gravity. Enter your weight to find out how heavy you'd feel there.</p>
+            <form id="weightForm" class="controls">
+                <label for="earthWeight">Your weight on Earth</label>
+                <input type="number" id="earthWeight" min="1" max="1000" step="any" placeholder="e.g. 150" required>
+                <select id="weightUnit" aria-label="Unit">
+                    <option value="lb">lb</option>
+                    <option value="kg">kg</option>
+                </select>
+                <button class="btn" type="submit">Calculate</button>
+            </form>
+            <p class="result" id="weightResult" aria-live="polite"></p>
+        </section>
+
+        <!-- ===== Second picture + more information ===== -->
+        <section class="split">
+            <figure>
+                <img src="../images/olympus-mons.svg" alt="Side-by-side drawing of the huge Olympus Mons volcano on Mars next to the much smaller Mount Everest" width="760" height="420">
+                <figcaption>Olympus Mons compared to Mount Everest.</figcaption>
+            </figure>
+            <div>
+                <h2>Home of Giants</h2>
+                <p>Olympus Mons is the tallest volcano in the solar system, about 22 km high and as wide as the state of Arizona.</p>
+                <p>Mars also has Valles Marineris, a canyon system about 4,000 km long. It would stretch across the entire United States.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Solar System Explorer &middot; CSCI 39548 Project 1 &middot; Built with HTML, CSS and JavaScript only.</p>
+        <p>All illustrations are original SVG drawings made for this site.</p>
+    </footer>
+
+    <!-- this page's JavaScript -->
+    <script src="../js/mars.js"></script>
+</body>
+</html>

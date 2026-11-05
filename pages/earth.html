@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Facts about Earth, our home planet.">
+    <title>Earth | Solar System Explorer</title>
+    <!-- shared layout first, then this page's theme -->
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/earth.css">
+</head>
+<body>
+
+    <!-- ===== Navigation bar: links to all 10 pages ===== -->
+    <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="sun.html">Sun</a></li>
+            <li><a href="moon.html">Moon</a></li>
+            <li><a href="earth.html" aria-current="page">Earth</a></li>
+            <li><a href="mercury.html">Mercury</a></li>
+            <li><a href="venus.html">Venus</a></li>
+            <li><a href="mars.html">Mars</a></li>
+            <li><a href="jupiter.html">Jupiter</a></li>
+            <li><a href="saturn.html">Saturn</a></li>
+            <li><a href="uranus.html">Uranus</a></li>
+        </ul>
+    </nav>
+
+    <!-- ===== Page title ===== -->
+    <header class="page-header">
+        <h1>Earth</h1>
+        <p class="tagline">The blue planet: the only world known to support life.</p>
+    </header>
+
+    <main>
+        <!-- ===== Introduction + first picture ===== -->
+        <section class="split">
+            <div>
+                <h2>Our Home Planet</h2>
+                <p>Earth is the third planet from the Sun and the largest of the four rocky planets. It is the only place in the universe where we know life exists.</p>
+                <p>Earth sits in the Sun's "Goldilocks zone": not too hot and not too cold, so water can stay liquid on its surface. Press the button below to watch the planet switch between day and night.</p>
+            </div>
+            <figure>
+                <img id="earth-img" src="../images/earth-day.svg" alt="Earth from space during the day with blue oceans, green continents and white clouds" width="500" height="500">
+                <figcaption>Earth in daylight.</figcaption>
+            </figure>
+        </section>
+
+        <!-- ===== Facts ===== -->
+        <section>
+            <h2>Earth Facts</h2>
+            <ul class="facts">
+                <li><strong>Position</strong>3rd planet from the Sun, about 150 million km away (1 astronomical unit).</li>
+                <li><strong>Size</strong>About 12,742 km across, the biggest of the rocky planets.</li>
+                <li><strong>Day</strong>One spin takes about 24 hours.</li>
+                <li><strong>Year</strong>One trip around the Sun takes 365.25 days, which is why we have leap years.</li>
+                <li><strong>Water world</strong>About 71% of Earth's surface is covered by water.</li>
+                <li><strong>Moons</strong>One: the Moon.</li>
+                <li><strong>Tilt</strong>Earth's axis is tilted about 23.4°, which gives us seasons.</li>
+            </ul>
+        </section>
+
+        <!-- ===== JavaScript feature: day/night toggle ===== -->
+        <section class="card" id="feature">
+            <h2>Day and Night</h2>
+            <p>Earth spins once every 24 hours, so half of the planet is always in daylight and half is always in darkness. The page started in <span id="startMode">day</span> mode based on the time on your device.</p>
+            <div class="controls">
+                <button class="btn" id="dayNightBtn" type="button" aria-pressed="false">Switch to Night</button>
+            </div>
+            <p class="result" id="dayNightText" aria-live="polite">It is daytime: the Sun lights up the oceans and clouds.</p>
+        </section>
+
+        <!-- ===== Second picture + more information ===== -->
+        <section class="split">
+            <figure>
+                <img src="../images/earth-seasons.svg" alt="Diagram of Earth orbiting the Sun at four points in the year with its tilted axis always pointing the same direction" width="700" height="400">
+                <figcaption>Earth's tilt causes the seasons.</figcaption>
+            </figure>
+            <div>
+                <h2>Why We Have Seasons</h2>
+                <p>Seasons are not caused by Earth getting closer to the Sun. They happen because Earth is tilted.</p>
+                <p>In June the Northern Hemisphere leans toward the Sun and gets summer, while the Southern Hemisphere leans away and gets winter. Six months later it's the other way around.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Solar System Explorer &middot; CSCI 39548 Project 1 &middot; Built with HTML, CSS and JavaScript only.</p>
+        <p>All illustrations are original SVG drawings made for this site.</p>
+    </footer>
+
+    <!-- this page's JavaScript -->
+    <script src="../js/earth.js"></script>
+</body>
+</html>

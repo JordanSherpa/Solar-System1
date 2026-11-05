@@ -1,0 +1,84 @@
+/* ==========================================================
+   jupiter.css - Jupiter theme: striped cloud bands
+   ========================================================== */
+:root {
+    --bg: #3d2614;
+    /* horizontal stripes like Jupiter's cloud belts */
+    --bg-image: repeating-linear-gradient(180deg,
+        #4a2e18 0 80px, #6b4325 80px 130px, #3d2614 130px 200px, #7a5232 200px 230px);
+    --text: #fbf1e1;
+    --muted: #e9d3b0;
+    --accent: #f2b880;
+    --accent-text: #3d2614;
+    --card: rgba(40, 22, 10, 0.7);
+    --card-border: rgba(242, 184, 128, 0.35);
+    --nav-bg: rgba(40, 22, 10, 0.85);
+    --heading-font: Georgia, "Times New Roman", serif;
+    --body-font: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+}
+
+.page-header h1 {
+    font-weight: 900;
+    letter-spacing: 3px;
+    /* text colored with the Great Red Spot's red */
+    color: #e36a43;
+    text-shadow: 2px 2px 0 #f6e7cc;
+}
+
+.facts li {
+    border-top: 6px solid #c58b5a;
+}
+
+/* ---------- Tabs ---------- */
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    border-bottom: 2px solid var(--accent);
+}
+
+.tab {
+    font: inherit;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 10px 10px 0 0;
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--text);
+    cursor: pointer;
+}
+
+.tab.active {
+    background: var(--accent);
+    color: var(--accent-text);
+    font-weight: bold;
+}
+
+.tab-panel {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 1.5rem 0 0;
+    animation: fadeIn 0.4s;
+}
+
+.tab-panel[hidden] {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to   { opacity: 1; transform: none; }
+}
+
+/* small CSS-drawn moons beside each tab's text */
+.moon-dot {
+    flex: none;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.moon-dot.io       { background: radial-gradient(circle at 35% 35%, #fff59a, #e8d24a 50%, #c25b1a); }
+.moon-dot.europa   { background: radial-gradient(circle at 35% 35%, #ffffff, #e9e1d0 55%, #a0603a); }
+.moon-dot.ganymede { background: radial-gradient(circle at 35% 35%, #d9cfc4, #9b8f84 55%, #4d443c); }
+.moon-dot.callisto { background: radial-gradient(circle at 35% 35%, #9b9087, #5f554c 55%, #2b241f); }

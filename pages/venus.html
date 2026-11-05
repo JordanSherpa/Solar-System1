@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Facts about Venus, the hottest planet in the solar system.">
+    <title>Venus | Solar System Explorer</title>
+    <!-- shared layout first, then this page's theme -->
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/venus.css">
+</head>
+<body>
+
+    <!-- ===== Navigation bar: links to all 10 pages ===== -->
+    <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="sun.html">Sun</a></li>
+            <li><a href="moon.html">Moon</a></li>
+            <li><a href="earth.html">Earth</a></li>
+            <li><a href="mercury.html">Mercury</a></li>
+            <li><a href="venus.html" aria-current="page">Venus</a></li>
+            <li><a href="mars.html">Mars</a></li>
+            <li><a href="jupiter.html">Jupiter</a></li>
+            <li><a href="saturn.html">Saturn</a></li>
+            <li><a href="uranus.html">Uranus</a></li>
+        </ul>
+    </nav>
+
+    <!-- ===== Page title ===== -->
+    <header class="page-header">
+        <h1>Venus</h1>
+        <p class="tagline">Earth's cloudy twin, and the hottest planet in the solar system.</p>
+    </header>
+
+    <main>
+        <!-- ===== Introduction + first picture ===== -->
+        <section class="split">
+            <div>
+                <h2>Beauty with a Burn</h2>
+                <p>Venus is named after the Roman goddess of love and beauty. After the Moon, it is the brightest natural object in the night sky.</p>
+                <p>Venus is almost the same size as Earth, but underneath its thick clouds of sulfuric acid lies a crushing, oven-hot world.</p>
+            </div>
+            <figure>
+                <img src="../images/venus.svg" alt="Venus wrapped in thick swirling yellow and tan clouds" width="500" height="500">
+                <figcaption>Venus is hidden under a blanket of clouds.</figcaption>
+            </figure>
+        </section>
+
+        <!-- ===== Facts ===== -->
+        <section>
+            <h2>Venus Facts</h2>
+            <ul class="facts">
+                <li><strong>Hottest planet</strong>Its surface is about 465 °C, hot enough to melt lead, because its thick CO₂ atmosphere traps heat.</li>
+                <li><strong>Size</strong>About 12,104 km across, almost Earth's twin.</li>
+                <li><strong>Distance</strong>About 108 million km (0.72 AU) from the Sun.</li>
+                <li><strong>Backwards spin</strong>Venus rotates in the opposite direction from most planets.</li>
+                <li><strong>Long day</strong>One spin takes 243 Earth days, longer than its 225-day year.</li>
+                <li><strong>Moons</strong>None.</li>
+            </ul>
+        </section>
+
+        <!-- ===== JavaScript feature: fun-facts pop-up (modal) ===== -->
+        <section class="card" id="feature">
+            <h2>Venus Fun Facts</h2>
+            <p>Think you know Venus? Open the pop-up for a random fun fact, then keep clicking for more.</p>
+            <div class="controls">
+                <button class="btn" id="openFacts" type="button">Show a Fun Fact</button>
+            </div>
+
+            <!-- Pop-up window (hidden until the button is clicked) -->
+            <div class="modal-overlay" id="factModal" hidden>
+                <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+                    <button class="modal-close" id="closeFacts" type="button" aria-label="Close">&times;</button>
+                    <h3 id="modalTitle">Did you know?</h3>
+                    <p id="factText"></p>
+                    <p class="fact-count" id="factCount"></p>
+                    <button class="btn" id="nextFact" type="button">Another Fact</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Second picture + more information ===== -->
+        <section class="split">
+            <figure>
+                <img src="../images/venus-surface.svg" alt="Artist's view of the surface of Venus: a volcano under an orange sky above dark rocky plains" width="700" height="420">
+                <figcaption>Venus's surface is covered in volcanoes and lava plains.</figcaption>
+            </figure>
+            <div>
+                <h2>A Volcanic World</h2>
+                <p>Venus has more volcanoes than any other planet. Its tallest, Maat Mons, rises about 8 km above the surrounding plains.</p>
+                <p>The Soviet Venera landers sent back the only photos ever taken from Venus's surface. The heat and pressure destroyed each one within about two hours.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Solar System Explorer &middot; CSCI 39548 Project 1 &middot; Built with HTML, CSS and JavaScript only.</p>
+        <p>All illustrations are original SVG drawings made for this site.</p>
+    </footer>
+
+    <!-- this page's JavaScript -->
+    <script src="../js/venus.js"></script>
+</body>
+</html>

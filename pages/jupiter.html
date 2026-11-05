@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Facts about Jupiter, the largest planet in the solar system.">
+    <title>Jupiter | Solar System Explorer</title>
+    <!-- shared layout first, then this page's theme -->
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/jupiter.css">
+</head>
+<body>
+
+    <!-- ===== Navigation bar: links to all 10 pages ===== -->
+    <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="sun.html">Sun</a></li>
+            <li><a href="moon.html">Moon</a></li>
+            <li><a href="earth.html">Earth</a></li>
+            <li><a href="mercury.html">Mercury</a></li>
+            <li><a href="venus.html">Venus</a></li>
+            <li><a href="mars.html">Mars</a></li>
+            <li><a href="jupiter.html" aria-current="page">Jupiter</a></li>
+            <li><a href="saturn.html">Saturn</a></li>
+            <li><a href="uranus.html">Uranus</a></li>
+        </ul>
+    </nav>
+
+    <!-- ===== Page title ===== -->
+    <header class="page-header">
+        <h1>Jupiter</h1>
+        <p class="tagline">The king of the planets: a gas giant bigger than all the others combined.</p>
+    </header>
+
+    <main>
+        <!-- ===== Introduction + first picture ===== -->
+        <section class="split">
+            <div>
+                <h2>The Giant Planet</h2>
+                <p>Jupiter is the largest planet in the solar system. It is more than twice as massive as all of the other planets put together.</p>
+                <p>Jupiter is a gas giant made mostly of hydrogen and helium, so it has no solid surface to stand on. Its colorful stripes are bands of clouds pushed by powerful winds.</p>
+            </div>
+            <figure>
+                <img src="../images/jupiter.svg" alt="Jupiter with tan, cream and brown cloud stripes and the oval Great Red Spot" width="500" height="500">
+                <figcaption>Jupiter's cloud bands and Great Red Spot.</figcaption>
+            </figure>
+        </section>
+
+        <!-- ===== Facts ===== -->
+        <section>
+            <h2>Jupiter Facts</h2>
+            <ul class="facts">
+                <li><strong>Size</strong>About 139,820 km across, 11 times wider than Earth.</li>
+                <li><strong>Distance</strong>About 778 million km (5.2 AU) from the Sun.</li>
+                <li><strong>Shortest day</strong>Spins once every 9 hours and 56 minutes, the fastest of any planet.</li>
+                <li><strong>Year</strong>One orbit takes about 12 Earth years.</li>
+                <li><strong>Great Red Spot</strong>A giant storm wider than Earth that has raged for hundreds of years.</li>
+                <li><strong>Moons</strong>More than 90 known moons, including the four large Galilean moons.</li>
+            </ul>
+        </section>
+
+        <!-- ===== JavaScript feature: Galilean moons tabs (show/hide) ===== -->
+        <section class="card" id="feature">
+            <h2>Meet the Galilean Moons</h2>
+            <p>In 1610 Galileo Galilei spotted Jupiter's four biggest moons through his telescope. Click a tab to learn about each one.</p>
+            <div class="tabs" role="tablist" aria-label="Galilean moons">
+                <button class="tab active" role="tab" id="tab-io" aria-controls="panel-io" aria-selected="true" type="button">Io</button>
+                <button class="tab" role="tab" id="tab-europa" aria-controls="panel-europa" aria-selected="false" tabindex="-1" type="button">Europa</button>
+                <button class="tab" role="tab" id="tab-ganymede" aria-controls="panel-ganymede" aria-selected="false" tabindex="-1" type="button">Ganymede</button>
+                <button class="tab" role="tab" id="tab-callisto" aria-controls="panel-callisto" aria-selected="false" tabindex="-1" type="button">Callisto</button>
+            </div>
+            <div class="tab-panel" role="tabpanel" id="panel-io" aria-labelledby="tab-io">
+                <div class="moon-dot io"></div>
+                <p><b>Io</b> is the most volcanically active world in the solar system, with hundreds of volcanoes, some shooting lava fountains dozens of kilometers high.</p>
+            </div>
+            <div class="tab-panel" role="tabpanel" id="panel-europa" aria-labelledby="tab-europa" hidden>
+                <div class="moon-dot europa"></div>
+                <p><b>Europa</b> is covered by a shell of ice. Scientists think a salty ocean lies underneath, making it one of the best places to look for life beyond Earth.</p>
+            </div>
+            <div class="tab-panel" role="tabpanel" id="panel-ganymede" aria-labelledby="tab-ganymede" hidden>
+                <div class="moon-dot ganymede"></div>
+                <p><b>Ganymede</b> is the largest moon in the solar system. It is even bigger than the planet Mercury and is the only moon known to have its own magnetic field.</p>
+            </div>
+            <div class="tab-panel" role="tabpanel" id="panel-callisto" aria-labelledby="tab-callisto" hidden>
+                <div class="moon-dot callisto"></div>
+                <p><b>Callisto</b> has one of the most heavily cratered surfaces in the solar system. Its old, icy crust has barely changed in billions of years.</p>
+            </div>
+        </section>
+
+        <!-- ===== Second picture + more information ===== -->
+        <section class="split">
+            <figure class="wide">
+                <img src="../images/galilean-moons.svg" alt="Jupiter's four largest moons, Io, Europa, Ganymede and Callisto, in a row next to the edge of Jupiter" width="800" height="300">
+                <figcaption>Io, Europa, Ganymede and Callisto.</figcaption>
+            </figure>
+            <div>
+                <h2>A Planet-Sized Storm</h2>
+                <p>The Great Red Spot is a storm with winds faster than 400 km/h. It has been watched since at least the 1830s and may be much older.</p>
+                <p>The storm has been shrinking over the past century, but it is still wider than Earth.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Solar System Explorer &middot; CSCI 39548 Project 1 &middot; Built with HTML, CSS and JavaScript only.</p>
+        <p>All illustrations are original SVG drawings made for this site.</p>
+    </footer>
+
+    <!-- this page's JavaScript -->
+    <script src="../js/jupiter.js"></script>
+</body>
+</html>

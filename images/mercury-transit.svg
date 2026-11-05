@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 420" width="700" height="420" role="img">
+  <title>Mercury crossing in front of the huge, bright Sun as a small black dot</title>
+  <rect width="700" height="420" fill="#120400"/>
+  <defs><radialGradient id="bigSun" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#fff7c2"/><stop offset="0.5" stop-color="#ffb300"/><stop offset="1" stop-color="#ff5a00"/></radialGradient></defs>
+  <circle cx="350" cy="420" r="330" fill="url(#bigSun)"/>
+  <circle cx="380" cy="230" r="16" fill="#111"/>
+  <path d="M200 260 Q 380 200 560 260" fill="none" stroke="#fff" stroke-width="2" stroke-dasharray="5 6" opacity=".7"/>
+  <text x="380" y="195" fill="#fff" font-family="Arial Narrow, Arial, sans-serif" font-size="18" text-anchor="middle">Mercury</text>
+  <text x="350" y="40" fill="#ffd9a0" font-family="Arial Narrow, Arial, sans-serif" font-size="16" text-anchor="middle">A transit: Mercury passes in front of the Sun as a tiny black dot</text>
+</svg>

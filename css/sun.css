@@ -1,0 +1,50 @@
+/* ==========================================================
+   sun.css - Sun theme: blazing orange, yellow and red
+   ========================================================== */
+:root {
+    --bg: #1a0500;
+    --bg-image: radial-gradient(circle at 50% -10%, #ff9d00 0%, #c43a00 30%, #3a0a00 65%, #1a0500 100%);
+    --text: #fff3dd;
+    --muted: #ffd29a;
+    --accent: #ffcf3f;
+    --accent-text: #2a0800;
+    --card: rgba(60, 10, 0, 0.55);
+    --card-border: rgba(255, 180, 60, 0.35);
+    --nav-bg: rgba(40, 6, 0, 0.75);
+    --heading-font: Impact, "Arial Black", "Franklin Gothic Heavy", sans-serif;
+    --body-font: Verdana, Tahoma, sans-serif;
+}
+
+/* glowing, pulsing title like the Sun's light */
+.page-header h1 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 0 0 12px #ff8c00, 0 0 30px #ff5a00;
+    animation: glow 2.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    to { text-shadow: 0 0 20px #ffd23f, 0 0 50px #ff5a00; }
+}
+
+.facts li {
+    border-left: 5px solid #ff8c00;
+}
+
+/* ---------- Light beam for the calculator ---------- */
+.beam-track {
+    height: 14px;
+    margin-top: 1rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.08);
+    overflow: hidden;
+}
+
+.beam {
+    width: 0;
+    height: 100%;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #fff7c2, #ffcf3f, #ff8c00);
+    box-shadow: 0 0 12px #ffcf3f;
+    transition: width 1.2s ease-out;
+}

@@ -1,0 +1,59 @@
+/* ==========================================================
+   moon.css - Moon theme: silver and gray, mission-log font
+   ========================================================== */
+:root {
+    --bg: #0d0e12;
+    /* soft "craters" made from radial gradients */
+    --bg-image:
+        radial-gradient(circle at 15% 25%, rgba(255, 255, 255, 0.05) 0 60px, transparent 61px),
+        radial-gradient(circle at 80% 60%, rgba(255, 255, 255, 0.04) 0 90px, transparent 91px),
+        radial-gradient(circle at 45% 90%, rgba(255, 255, 255, 0.05) 0 40px, transparent 41px),
+        linear-gradient(180deg, #16171d, #0b0b0e);
+    --text: #e9e9ec;
+    --muted: #a7a8b0;
+    --accent: #d8d8de;
+    --accent-text: #111216;
+    --card: rgba(255, 255, 255, 0.05);
+    --card-border: rgba(220, 220, 230, 0.25);
+    --heading-font: "Courier New", Courier, monospace;
+    --body-font: "Lucida Console", "Courier New", monospace;
+}
+
+.page-header h1 {
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+/* blinking cursor after the tagline, like a mission terminal */
+.tagline::after {
+    content: "_";
+    animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+.facts li {
+    border-style: dashed;
+}
+
+/* ---------- Phase slider layout ---------- */
+.phase-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+}
+
+#phaseCanvas {
+    background: #000;
+    border-radius: 50%;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.15);
+}
+
+#phaseSlider {
+    width: 100%;
+    max-width: 360px;
+    accent-color: #d8d8de;
+}

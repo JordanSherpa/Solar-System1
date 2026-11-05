@@ -1,0 +1,66 @@
+/* ==========================================================
+   mercury.css - Mercury theme: metallic gray with solar heat.
+   .night-side (added by mercury.js) switches to frozen colors.
+   ========================================================== */
+body {
+    --bg: #2b2826;
+    --bg-image: linear-gradient(135deg, #ff7a1a 0%, #8a3d12 18%, #3a3632 45%, #1f1d1b 100%);
+    --text: #f1eeea;
+    --muted: #c9c3bc;
+    --accent: #ffa64d;
+    --accent-text: #1f1d1b;
+    --card: rgba(0, 0, 0, 0.35);
+    --card-border: rgba(200, 195, 190, 0.3);
+    --heading-font: "Arial Narrow", "Franklin Gothic Medium", Arial, sans-serif;
+    --body-font: Tahoma, Verdana, sans-serif;
+}
+
+body.night-side {
+    --bg-image: linear-gradient(135deg, #0a0f1f 0%, #1b2236 40%, #2b2f3a 100%);
+    --accent: #8ec9ff;
+    --accent-text: #0a0f1f;
+}
+
+.page-header h1 {
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-style: italic;   /* "fast" slanted look for the swift planet */
+}
+
+.facts li {
+    background: linear-gradient(160deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.3));
+}
+
+/* ---------- Thermometer ---------- */
+.thermo-layout {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.thermometer {
+    position: relative;
+    width: 34px;
+    height: 220px;
+    border-radius: 999px;
+    border: 3px solid #ddd;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+}
+
+.thermo-fill {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 95%;
+    background: linear-gradient(0deg, #ff3b00, #ffb000);
+    transition: height 1s ease, background 1s ease;
+}
+
+.temp-readout {
+    margin: 0;
+    font-family: var(--heading-font);
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--accent);
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A guide to the Sun, the Moon and the planets of our solar system.">
+    <title>Home | Solar System Explorer</title>
+    <!-- shared layout first, then this page's theme -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+    <!-- ===== Navigation bar: links to all 10 pages ===== -->
+    <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="pages/sun.html">Sun</a></li>
+            <li><a href="pages/moon.html">Moon</a></li>
+            <li><a href="pages/earth.html">Earth</a></li>
+            <li><a href="pages/mercury.html">Mercury</a></li>
+            <li><a href="pages/venus.html">Venus</a></li>
+            <li><a href="pages/mars.html">Mars</a></li>
+            <li><a href="pages/jupiter.html">Jupiter</a></li>
+            <li><a href="pages/saturn.html">Saturn</a></li>
+            <li><a href="pages/uranus.html">Uranus</a></li>
+        </ul>
+    </nav>
+
+    <!-- ===== Page title ===== -->
+    <header class="page-header">
+        <h1>Solar System Explorer</h1>
+        <p class="tagline">A tour of our cosmic neighborhood: the Sun, Earth's Moon, and seven of the planets that orbit our star.</p>
+    </header>
+
+    <main>
+        <!-- ===== Introduction + first picture ===== -->
+        <section class="split">
+            <div>
+                <h2>Welcome to the Solar System</h2>
+                <p>Our solar system formed about <b>4.6 billion years ago</b> from a giant spinning cloud of gas and dust. Most of that material collapsed into the center to become the Sun, and the leftovers clumped together into planets, moons, asteroids and comets.</p>
+                <p>Today eight planets orbit the Sun. The four inner planets (Mercury, Venus, Earth and Mars) are small and rocky. The four outer planets (Jupiter, Saturn, Uranus and Neptune) are giants made mostly of gas and ice. Use the menu above to visit each world.</p>
+            </div>
+            <figure class="wide">
+                <img src="images/solar-system-lineup.svg" alt="The Sun on the left with the eight planets lined up in order from Mercury to Neptune" width="900" height="300">
+                <figcaption>The Sun and the eight planets in order (not to scale).</figcaption>
+            </figure>
+        </section>
+
+        <!-- ===== Facts ===== -->
+        <section>
+            <h2>Solar System at a Glance</h2>
+            <ul class="facts">
+                <li><strong>8 planets</strong>Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus and Neptune. Pluto was reclassified as a dwarf planet in 2006.</li>
+                <li><strong>One star</strong>The Sun holds about 99.8% of all the mass in the solar system.</li>
+                <li><strong>4.6 billion years old</strong>The Sun and planets formed together from the same cloud of gas and dust.</li>
+                <li><strong>Hundreds of moons</strong>Saturn and Jupiter alone have hundreds of known moons between them.</li>
+                <li><strong>Asteroid belt</strong>A ring of rocky asteroids orbits between Mars and Jupiter.</li>
+                <li><strong>Moving fast</strong>The whole solar system circles the center of the Milky Way at roughly 230 km every second.</li>
+            </ul>
+        </section>
+
+        <!-- ===== JavaScript feature: orbit animation with Start/Stop buttons ===== -->
+        <section class="card" id="feature">
+            <h2>Watch the Planets Orbit</h2>
+            <p>Each planet moves at its real relative speed: Mercury laps the Sun in 88 days while Neptune takes 165 years. Press <b>Start</b> to set them in motion.</p>
+            <div class="controls">
+                <button class="btn" id="startOrbit" type="button">Start</button>
+                <button class="btn secondary" id="stopOrbit" type="button" disabled>Stop</button>
+                <label for="orbitSpeed">Speed</label>
+                <input type="range" id="orbitSpeed" min="1" max="10" value="4">
+            </div>
+            <p class="result" id="yearCounter" aria-live="polite">Earth years passed: 0.0</p>
+            <!-- JavaScript adds the planets inside this box -->
+            <div class="orrery" id="orrery" role="img" aria-label="Animated diagram of the eight planets orbiting the Sun">
+                <div class="orrery-sun"></div>
+            </div>
+        </section>
+
+        <!-- ===== Second picture + more information ===== -->
+        <section class="split">
+            <figure>
+                <img src="images/milky-way.svg" alt="A glowing spiral galaxy with two star-filled arms around a bright yellow center" width="600" height="400">
+                <figcaption>Our solar system is one of billions in the Milky Way.</figcaption>
+            </figure>
+            <div>
+                <h2>Where Are We?</h2>
+                <p>The solar system is tucked into the Orion Arm of the Milky Way, about 26,000 light-years from the galaxy's center.</p>
+                <p>It takes the Sun about 230 million years to complete one trip around the galaxy, so the last time we were in this spot, the first dinosaurs were just appearing.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Solar System Explorer &middot; CSCI 39548 Project 1 &middot; Built with HTML, CSS and JavaScript only.</p>
+        <p>All illustrations are original SVG drawings made for this site.</p>
+    </footer>
+
+    <!-- this page's JavaScript -->
+    <script src="js/home.js"></script>
+</body>
+</html>

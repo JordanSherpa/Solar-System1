@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500" role="img">
+  <title>Jupiter with its tan and brown cloud bands and the Great Red Spot storm</title>
+  <rect width="500" height="500" fill="#07060a"/>
+  <defs><radialGradient id="js" cx="30%" cy="30%" r="85%"><stop offset="0.55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.75"/></radialGradient><clipPath id="jcl"><circle cx="250" cy="250" r="200"/></clipPath></defs>
+  <circle cx="161.9" cy="310.0" r="0.6" fill="#fff" opacity="0.56"/>
+  <circle cx="77.4" cy="378.3" r="0.8" fill="#fff" opacity="0.56"/>
+  <circle cx="99.7" cy="27.4" r="0.8" fill="#fff" opacity="0.70"/>
+  <circle cx="406.3" cy="263.4" r="1.3" fill="#fff" opacity="0.86"/>
+  <circle cx="174.7" cy="83.4" r="1" fill="#fff" opacity="0.76"/>
+  <circle cx="194.2" cy="291.6" r="0.8" fill="#fff" opacity="0.59"/>
+  <circle cx="415.9" cy="223.0" r="0.6" fill="#fff" opacity="0.99"/>
+  <circle cx="332.0" cy="124.9" r="0.8" fill="#fff" opacity="0.49"/>
+  <circle cx="403.9" cy="436.4" r="1" fill="#fff" opacity="0.58"/>
+  <circle cx="8.7" cy="175.5" r="1.3" fill="#fff" opacity="0.42"/>
+  <circle cx="48.8" cy="49.1" r="0.8" fill="#fff" opacity="0.65"/>
+  <circle cx="247.0" cy="282.8" r="1" fill="#fff" opacity="0.58"/>
+  <circle cx="47.4" cy="151.6" r="0.8" fill="#fff" opacity="0.50"/>
+  <circle cx="220.7" cy="273.1" r="1" fill="#fff" opacity="0.46"/>
+  <circle cx="375.5" cy="312.0" r="1.7" fill="#fff" opacity="0.55"/>
+  <circle cx="373.2" cy="12.3" r="0.8" fill="#fff" opacity="0.53"/>
+  <circle cx="163.0" cy="420.3" r="1.7" fill="#fff" opacity="0.92"/>
+  <circle cx="475.9" cy="135.0" r="0.8" fill="#fff" opacity="0.99"/>
+  <circle cx="249.9" cy="233.7" r="0.8" fill="#fff" opacity="0.95"/>
+  <circle cx="45.8" cy="497.0" r="1.3" fill="#fff" opacity="0.57"/>
+  <circle cx="233.6" cy="432.6" r="1" fill="#fff" opacity="0.63"/>
+  <circle cx="359.9" cy="311.7" r="1.7" fill="#fff" opacity="0.92"/>
+  <circle cx="246.2" cy="482.3" r="1.3" fill="#fff" opacity="0.53"/>
+  <circle cx="151.5" cy="283.8" r="1" fill="#fff" opacity="0.81"/>
+  <circle cx="25.1" cy="212.6" r="1" fill="#fff" opacity="0.55"/>
+  <circle cx="298.9" cy="345.2" r="1.3" fill="#fff" opacity="0.81"/>
+  <circle cx="277.6" cy="172.2" r="1.3" fill="#fff" opacity="0.43"/>
+  <circle cx="190.5" cy="283.8" r="1" fill="#fff" opacity="0.58"/>
+  <circle cx="369.9" cy="265.0" r="1" fill="#fff" opacity="0.83"/>
+  <circle cx="323.1" cy="414.9" r="1.3" fill="#fff" opacity="0.59"/>
+  <circle cx="336.4" cy="126.3" r="1.7" fill="#fff" opacity="0.46"/>
+  <circle cx="225.0" cy="234.8" r="1" fill="#fff" opacity="0.70"/>
+  <circle cx="240.8" cy="454.9" r="1.7" fill="#fff" opacity="0.88"/>
+  <circle cx="218.5" cy="91.5" r="1.3" fill="#fff" opacity="0.67"/>
+  <circle cx="307.5" cy="64.2" r="1.7" fill="#fff" opacity="0.45"/>
+  <circle cx="455.2" cy="225.9" r="0.8" fill="#fff" opacity="0.79"/>
+  <circle cx="84.9" cy="490.1" r="0.6" fill="#fff" opacity="0.62"/>
+  <circle cx="5.5" cy="449.4" r="0.8" fill="#fff" opacity="0.48"/>
+  <circle cx="380.8" cy="322.2" r="0.6" fill="#fff" opacity="0.98"/>
+  <circle cx="240.2" cy="2.4" r="0.6" fill="#fff" opacity="0.62"/>
+  <circle cx="199.4" cy="314.9" r="1" fill="#fff" opacity="0.74"/>
+  <circle cx="163.4" cy="450.7" r="0.6" fill="#fff" opacity="0.83"/>
+  <circle cx="181.3" cy="139.6" r="1.7" fill="#fff" opacity="0.86"/>
+  <circle cx="435.1" cy="267.7" r="1" fill="#fff" opacity="0.90"/>
+  <circle cx="29.8" cy="142.8" r="1.7" fill="#fff" opacity="0.84"/>
+  <circle cx="320.8" cy="344.9" r="1" fill="#fff" opacity="0.86"/>
+  <circle cx="27.0" cy="129.2" r="0.8" fill="#fff" opacity="0.60"/>
+  <circle cx="215.9" cy="153.3" r="1" fill="#fff" opacity="0.84"/>
+  <circle cx="245.7" cy="33.8" r="0.8" fill="#fff" opacity="0.71"/>
+  <circle cx="411.6" cy="372.2" r="1.3" fill="#fff" opacity="0.73"/>
+  <g clip-path="url(#jcl)">
+    <rect x="40" y="50.0" width="420" height="42" fill="#f3e2c3"/>
+    <rect x="40" y="92.5" width="420" height="37" fill="#c58b5a"/>
+    <rect x="40" y="135.0" width="420" height="32" fill="#efd8b0"/>
+    <rect x="40" y="165.0" width="420" height="42" fill="#a8683a"/>
+    <rect x="40" y="212.5" width="420" height="37" fill="#f6e7cc"/>
+    <rect x="40" y="250.0" width="420" height="42" fill="#b97b4b"/>
+    <rect x="40" y="295.0" width="420" height="32" fill="#efdcb9"/>
+    <rect x="40" y="327.5" width="420" height="37" fill="#9e6136"/>
+    <rect x="40" y="367.5" width="420" height="37" fill="#e9d3ad"/>
+    <rect x="40" y="405.0" width="420" height="42" fill="#c08a5e"/>
+    <path d="M40 110 q 50 -8 100 0 t 100 0 t 100 0 t 120 0" fill="none" stroke="#f6e7cc" stroke-width="3" opacity=".5"/>
+    <path d="M40 185 q 50 -8 100 0 t 100 0 t 100 0 t 120 0" fill="none" stroke="#f6e7cc" stroke-width="3" opacity=".5"/>
+    <path d="M40 270 q 50 -8 100 0 t 100 0 t 100 0 t 120 0" fill="none" stroke="#f6e7cc" stroke-width="3" opacity=".5"/>
+    <path d="M40 345 q 50 -8 100 0 t 100 0 t 100 0 t 120 0" fill="none" stroke="#f6e7cc" stroke-width="3" opacity=".5"/>
+    <ellipse cx="320" cy="300" rx="48" ry="26" fill="#b5442a"/><ellipse cx="320" cy="300" rx="34" ry="16" fill="#d0603e"/>
+  </g>
+  <circle cx="250" cy="250" r="200" fill="url(#js)"/>
+</svg>

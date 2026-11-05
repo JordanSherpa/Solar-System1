@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 500" width="680" height="500" role="img">
+  <title>Cutaway diagram of the Sun's layers: core, radiative zone, convective zone and photosphere</title>
+  <rect width="680" height="500" fill="#1a0500"/>
+  <circle cx="230" cy="250" r="200" fill="#ff5a00"/>
+  <circle cx="230" cy="250" r="160" fill="#ff8c1a"/>
+  <circle cx="230" cy="250" r="110" fill="#ffb340"/>
+  <circle cx="230" cy="250" r="55" fill="#fff2a8"/>
+  <path d="M230 250 L230 30 A220 220 0 0 1 450 250 Z" fill="#1a0500"/>
+  <path d="M230 250 L230 50 A200 200 0 0 1 430 250 Z" fill="#ff5a00" stroke="#1a0500" stroke-width="2"/>
+  <path d="M230 250 L230 90 A160 160 0 0 1 390 250 Z" fill="#ff8c1a" stroke="#1a0500" stroke-width="2"/>
+  <path d="M230 250 L230 140 A110 110 0 0 1 340 250 Z" fill="#ffb340" stroke="#1a0500" stroke-width="2"/>
+  <path d="M230 250 L230 195 A55 55 0 0 1 285 250 Z" fill="#fff2a8" stroke="#1a0500" stroke-width="2"/>
+  <line x1="310" y1="111" x2="470" y2="60" stroke="#ffe7b0" stroke-width="1.5"/>
+  <text x="475" y="65" fill="#ffe7b0" font-family="Arial Black, Impact, sans-serif" font-size="15">Photosphere (surface)</text>
+  <line x1="294" y1="139" x2="470" y2="120" stroke="#ffe7b0" stroke-width="1.5"/>
+  <text x="475" y="125" fill="#ffe7b0" font-family="Arial Black, Impact, sans-serif" font-size="15">Convective zone</text>
+  <line x1="274" y1="174" x2="470" y2="180" stroke="#ffe7b0" stroke-width="1.5"/>
+  <text x="475" y="185" fill="#ffe7b0" font-family="Arial Black, Impact, sans-serif" font-size="15">Radiative zone</text>
+  <line x1="252" y1="212" x2="470" y2="235" stroke="#ffe7b0" stroke-width="1.5"/>
+  <text x="475" y="240" fill="#ffe7b0" font-family="Arial Black, Impact, sans-serif" font-size="15">Core (15 million °C)</text>
+</svg>

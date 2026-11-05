@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500" role="img">
+  <title>Mars, the red planet, with dark surface markings and a white polar ice cap</title>
+  <rect width="500" height="500" fill="#0b0503"/>
+  <defs><radialGradient id="mars" cx="35%" cy="35%" r="70%"><stop offset="0" stop-color="#f08a4b"/><stop offset="0.6" stop-color="#c1440e"/><stop offset="1" stop-color="#5e1d05"/></radialGradient><radialGradient id="mas" cx="30%" cy="30%" r="85%"><stop offset="0.55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.75"/></radialGradient><clipPath id="macl"><circle cx="250" cy="250" r="200"/></clipPath></defs>
+  <circle cx="247.2" cy="278.3" r="1" fill="#fff" opacity="0.58"/>
+  <circle cx="402.0" cy="13.9" r="1" fill="#fff" opacity="0.62"/>
+  <circle cx="202.8" cy="164.9" r="0.8" fill="#fff" opacity="0.60"/>
+  <circle cx="3.2" cy="251.4" r="0.6" fill="#fff" opacity="0.78"/>
+  <circle cx="168.8" cy="216.8" r="0.8" fill="#fff" opacity="0.48"/>
+  <circle cx="201.6" cy="452.9" r="1" fill="#fff" opacity="0.66"/>
+  <circle cx="159.2" cy="186.2" r="0.8" fill="#fff" opacity="0.87"/>
+  <circle cx="307.5" cy="209.8" r="0.8" fill="#fff" opacity="0.48"/>
+  <circle cx="29.2" cy="183.8" r="0.6" fill="#fff" opacity="0.72"/>
+  <circle cx="42.9" cy="154.2" r="0.6" fill="#fff" opacity="0.65"/>
+  <circle cx="53.9" cy="173.1" r="0.6" fill="#fff" opacity="0.64"/>
+  <circle cx="57.5" cy="176.8" r="1" fill="#fff" opacity="0.42"/>
+  <circle cx="243.8" cy="211.3" r="1.3" fill="#fff" opacity="0.52"/>
+  <circle cx="35.8" cy="247.2" r="1" fill="#fff" opacity="0.79"/>
+  <circle cx="314.4" cy="203.7" r="1" fill="#fff" opacity="0.84"/>
+  <circle cx="360.8" cy="412.6" r="0.8" fill="#fff" opacity="0.90"/>
+  <circle cx="481.0" cy="485.1" r="1.7" fill="#fff" opacity="0.68"/>
+  <circle cx="225.0" cy="435.8" r="0.8" fill="#fff" opacity="0.88"/>
+  <circle cx="89.2" cy="304.1" r="1.3" fill="#fff" opacity="0.54"/>
+  <circle cx="103.7" cy="420.6" r="1.7" fill="#fff" opacity="0.67"/>
+  <circle cx="159.9" cy="38.9" r="0.8" fill="#fff" opacity="0.51"/>
+  <circle cx="84.0" cy="229.6" r="1" fill="#fff" opacity="0.94"/>
+  <circle cx="478.0" cy="295.6" r="0.6" fill="#fff" opacity="0.91"/>
+  <circle cx="323.2" cy="70.9" r="0.6" fill="#fff" opacity="0.48"/>
+  <circle cx="248.7" cy="37.6" r="1" fill="#fff" opacity="0.66"/>
+  <circle cx="217.9" cy="321.6" r="1.7" fill="#fff" opacity="0.63"/>
+  <circle cx="462.8" cy="485.5" r="0.6" fill="#fff" opacity="0.85"/>
+  <circle cx="403.1" cy="433.1" r="1" fill="#fff" opacity="0.86"/>
+  <circle cx="243.7" cy="252.3" r="1.7" fill="#fff" opacity="0.76"/>
+  <circle cx="26.5" cy="172.1" r="1.3" fill="#fff" opacity="0.93"/>
+  <circle cx="160.9" cy="407.0" r="1.7" fill="#fff" opacity="0.57"/>
+  <circle cx="453.0" cy="345.8" r="0.8" fill="#fff" opacity="0.74"/>
+  <circle cx="140.0" cy="269.4" r="0.8" fill="#fff" opacity="0.78"/>
+  <circle cx="155.1" cy="347.5" r="0.8" fill="#fff" opacity="0.55"/>
+  <circle cx="291.0" cy="383.1" r="0.8" fill="#fff" opacity="0.70"/>
+  <circle cx="390.4" cy="245.7" r="1" fill="#fff" opacity="0.84"/>
+  <circle cx="224.1" cy="283.1" r="1.7" fill="#fff" opacity="0.62"/>
+  <circle cx="306.4" cy="253.4" r="1" fill="#fff" opacity="0.53"/>
+  <circle cx="186.9" cy="347.4" r="0.8" fill="#fff" opacity="0.57"/>
+  <circle cx="296.1" cy="384.0" r="0.6" fill="#fff" opacity="0.68"/>
+  <circle cx="465.7" cy="318.9" r="1.7" fill="#fff" opacity="0.43"/>
+  <circle cx="416.3" cy="279.9" r="1.7" fill="#fff" opacity="0.42"/>
+  <circle cx="470.9" cy="73.3" r="1" fill="#fff" opacity="0.50"/>
+  <circle cx="178.3" cy="297.9" r="1.7" fill="#fff" opacity="0.96"/>
+  <circle cx="107.2" cy="239.7" r="1" fill="#fff" opacity="0.87"/>
+  <circle cx="1.6" cy="250.3" r="0.8" fill="#fff" opacity="0.58"/>
+  <circle cx="137.5" cy="167.7" r="1.7" fill="#fff" opacity="0.77"/>
+  <circle cx="255.5" cy="103.7" r="0.8" fill="#fff" opacity="0.43"/>
+  <circle cx="17.7" cy="146.8" r="0.8" fill="#fff" opacity="0.47"/>
+  <circle cx="474.2" cy="292.6" r="1" fill="#fff" opacity="0.53"/>
+  <circle cx="299.4" cy="105.8" r="1.3" fill="#fff" opacity="0.45"/>
+  <circle cx="466.8" cy="220.8" r="1" fill="#fff" opacity="0.49"/>
+  <circle cx="122.4" cy="455.9" r="1" fill="#fff" opacity="0.42"/>
+  <circle cx="399.5" cy="90.1" r="0.6" fill="#fff" opacity="0.45"/>
+  <circle cx="407.3" cy="484.6" r="1" fill="#fff" opacity="0.42"/>
+  <circle cx="101.1" cy="274.0" r="1.3" fill="#fff" opacity="0.67"/>
+  <circle cx="52.4" cy="410.8" r="1.7" fill="#fff" opacity="0.49"/>
+  <circle cx="408.5" cy="440.1" r="0.6" fill="#fff" opacity="0.74"/>
+  <circle cx="115.9" cy="63.2" r="0.8" fill="#fff" opacity="0.82"/>
+  <circle cx="298.9" cy="419.9" r="0.6" fill="#fff" opacity="0.58"/>
+  <circle cx="250" cy="250" r="200" fill="url(#mars)"/>
+  <g clip-path="url(#macl)">
+    <path d="M120 260 q 60 -20 130 0 q 60 15 140 -5" fill="none" stroke="#7a2a08" stroke-width="10" opacity=".7"/>
+    <path d="M140 180 q 40 -30 90 -10 q 20 30 -30 40 q -50 5 -60 -30z" fill="#8f3510" opacity=".6"/>
+    <path d="M280 320 q 50 -20 90 10 q -10 40 -60 30 q -30 -10 -30 -40z" fill="#8f3510" opacity=".6"/>
+    <ellipse cx="250" cy="55" rx="90" ry="25" fill="#f6f2ee"/>
+    <circle cx="170" cy="210" r="14" fill="#a03a0c" stroke="#e07a40" stroke-width="2"/>
+  </g>
+  <circle cx="250" cy="250" r="200" fill="url(#mas)"/>
+</svg>

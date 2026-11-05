@@ -1,0 +1,90 @@
+/* ==========================================================
+   home.css - Homepage theme: deep space with twinkling stars
+   ========================================================== */
+:root {
+    --bg: #03040c;
+    /* layered radial gradients = a nebula glow behind the stars */
+    --bg-image:
+        radial-gradient(ellipse at 20% 10%, rgba(88, 60, 180, 0.35), transparent 55%),
+        radial-gradient(ellipse at 85% 80%, rgba(20, 120, 170, 0.3), transparent 50%);
+    --accent: #8be0ff;
+    --accent-text: #03040c;
+    --heading-font: "Trebuchet MS", "Segoe UI", sans-serif;
+    --body-font: "Segoe UI", "Trebuchet MS", Arial, sans-serif;
+}
+
+/* tiny star dots drawn with a repeating gradient that slowly twinkles */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background-image:
+        radial-gradient(1px 1px at 20px 30px, #fff, transparent),
+        radial-gradient(1px 1px at 120px 80px, #cfe8ff, transparent),
+        radial-gradient(1.5px 1.5px at 200px 160px, #fff, transparent),
+        radial-gradient(1px 1px at 60px 190px, #ffe9c7, transparent);
+    background-size: 240px 220px;
+    animation: twinkle 4s ease-in-out infinite alternate;
+}
+
+@keyframes twinkle {
+    from { opacity: 0.45; }
+    to   { opacity: 1; }
+}
+
+.page-header h1 {
+    /* gradient-filled title text */
+    background: linear-gradient(90deg, #8be0ff, #c9a7ff, #ffd28b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 2px;
+}
+
+/* homepage uses a stacked layout so the wide lineup image fits */
+main > .split:first-child {
+    grid-template-columns: 1fr;
+}
+
+/* ---------- Orbit animation box ---------- */
+.orrery {
+    position: relative;
+    width: 100%;
+    max-width: 560px;
+    aspect-ratio: 1 / 1;
+    margin: 1rem auto 0;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.04), transparent 70%);
+}
+
+.orrery-sun {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 9%;
+    height: 9%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: radial-gradient(circle, #fff7c2, #ffb300 60%, #ff6a00);
+    box-shadow: 0 0 30px 8px rgba(255, 170, 0, 0.6);
+}
+
+/* the dashed circles each planet travels along (added by JS) */
+.orbit-path {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border: 1px dashed rgba(255, 255, 255, 0.18);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* the planets themselves (added and moved by JS) */
+.orbit-planet {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}

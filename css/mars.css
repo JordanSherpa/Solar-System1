@@ -1,0 +1,36 @@
+/* ==========================================================
+   mars.css - Mars theme: rusty reds and dusty desert tones
+   ========================================================== */
+:root {
+    --bg: #3b1206;
+    --bg-image: linear-gradient(180deg, #d9875a 0%, #a8431b 30%, #6b200b 70%, #3b1206 100%);
+    --text: #fff1e6;
+    --muted: #f6cdb0;
+    --accent: #ffb38a;
+    --accent-text: #3b1206;
+    --card: rgba(60, 15, 5, 0.5);
+    --card-border: rgba(255, 179, 138, 0.35);
+    --nav-bg: rgba(59, 18, 6, 0.8);
+    --heading-font: Rockwell, "Courier New", "Copperplate", serif;
+    --body-font: "Trebuchet MS", Arial, sans-serif;
+}
+
+.page-header h1 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 3px 3px 0 #6b200b;
+}
+
+/* dusty texture over the cards */
+.facts li,
+.card {
+    background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.02) 0 4px, transparent 4px 8px);
+}
+
+.facts li {
+    border-bottom: 4px solid #c1440e;
+}
+
+#earthWeight {
+    width: 9rem;
+}

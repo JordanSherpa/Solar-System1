@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Facts about the Sun, the star at the center of our solar system.">
+    <title>The Sun | Solar System Explorer</title>
+    <!-- shared layout first, then this page's theme -->
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/sun.css">
+</head>
+<body>
+
+    <!-- ===== Navigation bar: links to all 10 pages ===== -->
+    <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="sun.html" aria-current="page">Sun</a></li>
+            <li><a href="moon.html">Moon</a></li>
+            <li><a href="earth.html">Earth</a></li>
+            <li><a href="mercury.html">Mercury</a></li>
+            <li><a href="venus.html">Venus</a></li>
+            <li><a href="mars.html">Mars</a></li>
+            <li><a href="jupiter.html">Jupiter</a></li>
+            <li><a href="saturn.html">Saturn</a></li>
+            <li><a href="uranus.html">Uranus</a></li>
+        </ul>
+    </nav>
+
+    <!-- ===== Page title ===== -->
+    <header class="page-header">
+        <h1>The Sun</h1>
+        <p class="tagline">The blazing star at the heart of our solar system.</p>
+    </header>
+
+    <main>
+        <!-- ===== Introduction + first picture ===== -->
+        <section class="split">
+            <div>
+                <h2>Our Star</h2>
+                <p>The Sun is a giant ball of hot plasma made mostly of hydrogen and helium. Deep in its core, hydrogen atoms are fused into helium, releasing the energy that lights and warms every planet.</p>
+                <p>Without the Sun's light and heat there would be no weather, no seasons and no life on Earth.</p>
+            </div>
+            <figure>
+                <img src="../images/sun.svg" alt="The Sun drawn as a bright orange-yellow ball surrounded by glowing rays" width="500" height="500">
+                <figcaption>The Sun, a yellow dwarf star.</figcaption>
+            </figure>
+        </section>
+
+        <!-- ===== Facts ===== -->
+        <section>
+            <h2>Sun Facts</h2>
+            <ul class="facts">
+                <li><strong>Type of star</strong>A yellow dwarf (G-type main-sequence star) about 4.6 billion years old.</li>
+                <li><strong>Size</strong>About 1.39 million km across, or roughly 109 Earths side by side.</li>
+                <li><strong>Mass</strong>Holds about 99.8% of all the mass in the solar system.</li>
+                <li><strong>Temperature</strong>About 5,500 °C at the surface and around 15 million °C in the core.</li>
+                <li><strong>Light travel time</strong>Sunlight takes about 8 minutes and 20 seconds to reach Earth.</li>
+                <li><strong>Rotation</strong>The Sun spins faster at its equator (about 25 days) than at its poles (about 35 days).</li>
+            </ul>
+        </section>
+
+        <!-- ===== JavaScript feature: light-travel-time calculator ===== -->
+        <section class="card" id="feature">
+            <h2>How Long Does Sunlight Take?</h2>
+            <p>Light is the fastest thing in the universe, about 300,000 km every second, but space is huge. Pick a planet to see how old its sunlight is when it arrives.</p>
+            <div class="controls">
+                <label for="planetSelect">Planet</label>
+                <select id="planetSelect">
+                    <option value="0.387">Mercury</option>
+                    <option value="0.723">Venus</option>
+                    <option value="1" selected>Earth</option>
+                    <option value="1.524">Mars</option>
+                    <option value="5.203">Jupiter</option>
+                    <option value="9.537">Saturn</option>
+                    <option value="19.19">Uranus</option>
+                    <option value="30.07">Neptune</option>
+                </select>
+                <button class="btn" id="calcLight" type="button">Calculate</button>
+            </div>
+            <p class="result" id="lightResult" aria-live="polite"></p>
+            <!-- the beam grows to show the distance -->
+            <div class="beam-track"><div class="beam" id="beam"></div></div>
+        </section>
+
+        <!-- ===== Second picture + more information ===== -->
+        <section class="split">
+            <figure>
+                <img src="../images/sun-layers.svg" alt="Cutaway diagram of the Sun showing the core, radiative zone, convective zone and photosphere" width="680" height="500">
+                <figcaption>Inside the Sun: energy travels from the core out to the surface.</figcaption>
+            </figure>
+            <div>
+                <h2>Inside the Sun</h2>
+                <p>Energy made in the core can take more than 100,000 years to work its way out through the radiative and convective zones before it escapes as sunlight.</p>
+                <p>In about 5 billion years the Sun will run low on hydrogen, swell into a red giant, and eventually shrink into a small, dim white dwarf.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Solar System Explorer &middot; CSCI 39548 Project 1 &middot; Built with HTML, CSS and JavaScript only.</p>
+        <p>All illustrations are original SVG drawings made for this site.</p>
+    </footer>
+
+    <!-- this page's JavaScript -->
+    <script src="../js/sun.js"></script>
+</body>
+</html>

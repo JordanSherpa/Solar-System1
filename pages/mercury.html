@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Facts about Mercury, the smallest planet and closest to the Sun.">
+    <title>Mercury | Solar System Explorer</title>
+    <!-- shared layout first, then this page's theme -->
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/mercury.css">
+</head>
+<body>
+
+    <!-- ===== Navigation bar: links to all 10 pages ===== -->
+    <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="sun.html">Sun</a></li>
+            <li><a href="moon.html">Moon</a></li>
+            <li><a href="earth.html">Earth</a></li>
+            <li><a href="mercury.html" aria-current="page">Mercury</a></li>
+            <li><a href="venus.html">Venus</a></li>
+            <li><a href="mars.html">Mars</a></li>
+            <li><a href="jupiter.html">Jupiter</a></li>
+            <li><a href="saturn.html">Saturn</a></li>
+            <li><a href="uranus.html">Uranus</a></li>
+        </ul>
+    </nav>
+
+    <!-- ===== Page title ===== -->
+    <header class="page-header">
+        <h1>Mercury</h1>
+        <p class="tagline">The smallest planet and the closest to the Sun.</p>
+    </header>
+
+    <main>
+        <!-- ===== Introduction + first picture ===== -->
+        <section class="split">
+            <div>
+                <h2>The Swift Planet</h2>
+                <p>Mercury is named after the speedy messenger of the Roman gods because it races around the Sun faster than any other planet.</p>
+                <p>It has almost no atmosphere to trap heat, so its temperature swings more than any other planet's: scorching in sunlight, freezing in the dark.</p>
+            </div>
+            <figure>
+                <img src="../images/mercury.svg" alt="Mercury drawn as a small gray planet covered in craters" width="500" height="500">
+                <figcaption>Mercury's cratered surface looks a lot like our Moon.</figcaption>
+            </figure>
+        </section>
+
+        <!-- ===== Facts ===== -->
+        <section>
+            <h2>Mercury Facts</h2>
+            <ul class="facts">
+                <li><strong>Size</strong>About 4,879 km across, the smallest planet, only slightly bigger than Earth's Moon.</li>
+                <li><strong>Distance</strong>About 58 million km (0.39 AU) from the Sun.</li>
+                <li><strong>Year</strong>Orbits the Sun in just 88 Earth days, the shortest year of any planet.</li>
+                <li><strong>Day</strong>One sunrise to the next takes 176 Earth days, two of its years!</li>
+                <li><strong>Temperature</strong>About 430 °C during the day and −180 °C at night.</li>
+                <li><strong>Moons</strong>None. Mercury has no moons and no rings.</li>
+            </ul>
+        </section>
+
+        <!-- ===== JavaScript feature: day vs. night temperature switch ===== -->
+        <section class="card" id="feature">
+            <h2>Day Side vs. Night Side</h2>
+            <p>Switch between Mercury's day side and night side to see one of the biggest temperature swings in the solar system.</p>
+            <div class="controls">
+                <button class="btn" id="dayBtn" type="button">Day Side</button>
+                <button class="btn secondary" id="nightBtn" type="button">Night Side</button>
+            </div>
+            <div class="thermo-layout">
+                <div class="thermometer" aria-hidden="true">
+                    <div class="thermo-fill" id="thermoFill"></div>
+                </div>
+                <div>
+                    <p class="temp-readout" id="tempReadout">430 °C</p>
+                    <p id="tempF">806 °F</p>
+                    <p id="tempText" aria-live="polite">Hot enough to melt lead.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Second picture + more information ===== -->
+        <section class="split">
+            <figure>
+                <img src="../images/mercury-transit.svg" alt="Mercury seen as a tiny black dot crossing in front of the giant glowing Sun" width="700" height="420">
+                <figcaption>A transit of Mercury across the Sun.</figcaption>
+            </figure>
+            <div>
+                <h2>Crossing the Sun</h2>
+                <p>About 13 times each century, Mercury passes directly between Earth and the Sun. This is called a <i>transit</i>, and Mercury looks like a tiny black dot sliding across the Sun.</p>
+                <p>Two spacecraft have visited Mercury: Mariner 10 and MESSENGER. A third mission, BepiColombo, is on its way.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Solar System Explorer &middot; CSCI 39548 Project 1 &middot; Built with HTML, CSS and JavaScript only.</p>
+        <p>All illustrations are original SVG drawings made for this site.</p>
+    </footer>
+
+    <!-- this page's JavaScript -->
+    <script src="../js/mercury.js"></script>
+</body>
+</html>

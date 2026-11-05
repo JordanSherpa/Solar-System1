@@ -1,0 +1,47 @@
+/* ==========================================================
+   earth.css - Earth theme: ocean blue and forest green.
+   The .night class (added by earth.js) switches to night colors.
+   ========================================================== */
+:root {
+    --heading-font: Georgia, "Times New Roman", serif;
+    --body-font: Verdana, Geneva, sans-serif;
+}
+
+/* ----- Day colors ----- */
+body {
+    --bg: #0b4f8a;
+    --bg-image: linear-gradient(180deg, #5fb4f0 0%, #1f73c4 40%, #0b4f8a 75%, #1d6b3a 100%);
+    --text: #ffffff;
+    --muted: #e1f1ff;
+    --accent: #b8f28a;
+    --accent-text: #0b3a1a;
+    --card: rgba(0, 40, 80, 0.4);
+    --card-border: rgba(255, 255, 255, 0.35);
+    --nav-bg: rgba(0, 45, 90, 0.7);
+}
+
+/* ----- Night colors (toggled with JavaScript) ----- */
+body.night {
+    --bg: #020617;
+    --bg-image: radial-gradient(circle at 70% 20%, #1b2a55 0%, #050a1c 55%, #01020a 100%);
+    --text: #e6ecff;
+    --muted: #9fb0d9;
+    --accent: #ffd36b;
+    --accent-text: #1a1200;
+    --card: rgba(255, 255, 255, 0.05);
+    --card-border: rgba(255, 211, 107, 0.3);
+    --nav-bg: rgba(2, 6, 23, 0.8);
+}
+
+.page-header h1 {
+    text-shadow: 2px 3px 0 rgba(0, 0, 0, 0.35);
+}
+
+.facts li {
+    border-radius: 20px 4px 20px 4px;   /* leaf-like corners */
+}
+
+/* image fades while it is being swapped */
+#earth-img {
+    transition: opacity 0.4s;
+}

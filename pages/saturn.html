@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Facts about Saturn, the ringed planet.">
+    <title>Saturn | Solar System Explorer</title>
+    <!-- shared layout first, then this page's theme -->
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/saturn.css">
+</head>
+<body>
+
+    <!-- ===== Navigation bar: links to all 10 pages ===== -->
+    <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="sun.html">Sun</a></li>
+            <li><a href="moon.html">Moon</a></li>
+            <li><a href="earth.html">Earth</a></li>
+            <li><a href="mercury.html">Mercury</a></li>
+            <li><a href="venus.html">Venus</a></li>
+            <li><a href="mars.html">Mars</a></li>
+            <li><a href="jupiter.html">Jupiter</a></li>
+            <li><a href="saturn.html" aria-current="page">Saturn</a></li>
+            <li><a href="uranus.html">Uranus</a></li>
+        </ul>
+    </nav>
+
+    <!-- ===== Page title ===== -->
+    <header class="page-header">
+        <h1>Saturn</h1>
+        <p class="tagline">The jewel of the solar system, crowned with dazzling rings.</p>
+    </header>
+
+    <main>
+        <!-- ===== Introduction + first picture ===== -->
+        <section class="split">
+            <div>
+                <h2>Lord of the Rings</h2>
+                <p>Saturn is the second-largest planet and the farthest one you can easily see without a telescope. Like Jupiter, it is a gas giant made mostly of hydrogen and helium.</p>
+                <p>Its famous rings stretch hundreds of thousands of kilometers wide but are usually only about 10 meters to 1 kilometer thick.</p>
+            </div>
+            <figure>
+                <img src="../images/saturn.svg" alt="Saturn, a pale gold planet surrounded by wide tilted rings" width="600" height="460">
+                <figcaption>Saturn and its ring system.</figcaption>
+            </figure>
+        </section>
+
+        <!-- ===== Facts ===== -->
+        <section>
+            <h2>Saturn Facts</h2>
+            <ul class="facts">
+                <li><strong>Size</strong>About 116,460 km across, about 9 Earths wide.</li>
+                <li><strong>Distance</strong>About 1.4 billion km (9.5 AU) from the Sun.</li>
+                <li><strong>Day</strong>Spins once every 10 hours and 33 minutes.</li>
+                <li><strong>Year</strong>One orbit takes about 29.4 Earth years.</li>
+                <li><strong>Moons</strong>More than 270 known moons, the most of any planet. Titan is the largest.</li>
+                <li><strong>Could float</strong>Saturn is less dense than water, so it would float in a big enough bathtub.</li>
+            </ul>
+        </section>
+
+        <!-- ===== JavaScript feature: ring-tilt animation with Start/Stop ===== -->
+        <section class="card" id="feature">
+            <h2>Watch the Rings Tilt</h2>
+            <p>Saturn is tilted 26.7°, so as it orbits the Sun we see its rings from above, then edge-on, then from below. Edge-on, the rings almost disappear! Press <b>Start</b> to fast-forward through one 29.4-year Saturn orbit.</p>
+            <div class="controls">
+                <button class="btn" id="startRings" type="button">Start</button>
+                <button class="btn secondary" id="stopRings" type="button" disabled>Stop</button>
+            </div>
+            <p class="result" id="ringStatus" aria-live="polite">Year 0.0 of 29.4: rings tilted toward us</p>
+            <!-- the rings are redrawn by JavaScript every frame -->
+            <svg class="ring-stage" viewBox="0 0 400 240" role="img" aria-label="Animated Saturn whose rings tilt as it orbits">
+                <g transform="rotate(-10 200 120)">
+                    <path id="ringBack" fill="none" stroke="#e7d3a1" stroke-width="14" opacity="0.9"></path>
+                    <circle cx="200" cy="120" r="62" fill="#e2c27f"></circle>
+                    <rect x="140" y="95" width="120" height="10" fill="#c9a35e" opacity="0.5"></rect>
+                    <rect x="140" y="130" width="120" height="8" fill="#f3dfae" opacity="0.5"></rect>
+                    <path id="ringFront" fill="none" stroke="#e7d3a1" stroke-width="14" opacity="0.9"></path>
+                </g>
+            </svg>
+        </section>
+
+        <!-- ===== Second picture + more information ===== -->
+        <section class="split">
+            <figure>
+                <img src="../images/saturn-rings-closeup.svg" alt="Close-up drawing of Saturn's rings made of countless chunks of ice and rock of different sizes" width="700" height="420">
+                <figcaption>Saturn's rings up close.</figcaption>
+            </figure>
+            <div>
+                <h2>What Are the Rings Made Of?</h2>
+                <p>The rings are made of billions of pieces of ice and rock, from grains as small as dust to chunks as big as a house.</p>
+                <p>Scientists think the rings may be quite young, possibly only a few hundred million years old, and they are slowly raining down onto Saturn.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Solar System Explorer &middot; CSCI 39548 Project 1 &middot; Built with HTML, CSS and JavaScript only.</p>
+        <p>All illustrations are original SVG drawings made for this site.</p>
+    </footer>
+
+    <!-- this page's JavaScript -->
+    <script src="../js/saturn.js"></script>
+</body>
+</html>
